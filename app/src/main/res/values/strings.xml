@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Virtual_Receptionist</string>
+    <string name="drawer_open">OPEN</string>
+    <string name="drawer_close">CLOSE</string>
+    <string name="emailrequired">Email Required</string>
+    <string name="userrequired">Username Required</string>
+    <string name="passwordrequired">Password Required</string>
+    <string name="fullnamerequired">Full Name Required</string>
+    <string name="entervalidemailrequired">Enter Valid Email \'Id</string>
+    <string name="create_new">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="Setting">Setting</string>
+    <string name="exit_string">Exit</string>
+
+    <string name="app_name1">SweetAlertDialog</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string-array name="staff_in_numbers">
+        <item>Select Staff</item>
+        <item>1-10</item>
+        <item>11-50</item>
+        <item>51-100</item>
+        <item>101-500</item>
+        <item>500- above</item>
+
+    </string-array>
+    <string-array name="country_arrays">
+        <item>Select Staff</item>
+        <item>1-10</item>
+        <item>11-50</item>
+        <item>51-100</item>
+        <item>101-500</item>
+        <item>500- above</item>
+
+    </string-array>
+    <string-array name="coming_soon">
+        <item>Reading...</item>
+
+
+    </string-array>
+
+    <string-array name="revenue_in_crore">
+        <item>Select Revenue</item>
+        <item>Under 6 Lacs</item>
+        <item>6-18 Lacs</item>
+        <item>18-50 Lacs</item>
+        <item>50 Lacs - 1 Cr</item>
+        <item>1 Cr - 5 Cr</item>
+        <item>5 Cr - 25 Cr</item>
+        <item>Above 25 Cr </item>
+
+    </string-array>
+
+    <string name="title_activity_agent_profile">AgentProfile</string>
+    <string-array name="menuItem">
+        <item>Profile</item>
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

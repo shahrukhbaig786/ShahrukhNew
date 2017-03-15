@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0dee7"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/table_row12"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/white_bg">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Upload Documents"
+            android:textColor="@color/app_bg"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <!-- Row 2 with 3 columns -->
+
+
+    <LinearLayout
+
+        android:id="@+id/table_row1d2"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#5c66a3"
+        android:weightSum="5">
+
+
+        <TextView
+            android:id="@+id/editTextdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:padding="20dip"
+            android:paddingLeft="5dp"
+            android:popupBackground="#f1eded"
+            android:text="Document"
+            android:textColor="@color/white_bg"
+            android:textSize="16dp"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/editgfghferhText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/fgh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Action"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#ece4e4"
+        android:weightSum="5">
+
+        <Spinner
+            android:id="@+id/spinner_document1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:gravity="left"
+
+
+            android:popupBackground="#f1eded"
+            android:spinnerMode="dropdown"
+
+            android:textColor="#fff"
+
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/upload_id1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ece4e4"
+            android:gravity="center"
+            android:padding="20dip"
+            android:src="@drawable/ic_pcupload"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/img_document1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ece4e4"
+            android:gravity="center"
+            android:padding="20dip"
+            android:src="@drawable/upload"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/status1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ece4e4"
+            android:gravity="center_vertical"
+            android:src="@drawable/upload"
+            android:text="Not Upload"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <!-- Row 1 with single column -->
+
+        <!-- Row 2 with 3 columns -->
+
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="#ece4e4"
+            android:weightSum="5">
+
+            <Spinner
+                android:id="@+id/spinner_document2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:gravity="left"
+
+
+                android:popupBackground="#f1eded"
+                android:spinnerMode="dropdown"
+
+                android:textColor="#fff" />
+
+
+            <ImageButton
+                android:id="@+id/upload_id2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ece4e4"
+                android:gravity="center"
+                android:padding="20dip"
+                android:src="@drawable/ic_pcupload"
+                android:textColor="#000000" />
+
+            <ImageButton
+                android:id="@+id/img_document2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ece4e4"
+                android:gravity="center"
+                android:padding="20dip"
+                android:src="@drawable/upload"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ece4e4"
+                android:gravity="center_vertical"
+                android:src="@drawable/upload"
+                android:text="Not Upload"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Row 2 with 3 columns -->
+
+
+</LinearLayout>

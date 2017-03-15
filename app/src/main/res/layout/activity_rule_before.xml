@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0dee7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/imgg"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:padding="10dp"
+            android:text="Action Selected"
+            android:textColor="@color/white_bg" />
+
+        <Spinner
+            android:id="@+id/_rule_before_Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_weight="2.5"
+            android:ellipsize="marquee"
+            android:gravity="left"></Spinner>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/parent_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"><!-- Start of Parent LinerLayout  -->
+
+
+            <LinearLayout
+                android:id="@+id/layout1_case1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"><!-- Start of CASE1 LinerLayout  -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case1_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:text="SDJdfjk"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case1_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout><!-- Close of CASE 1 LinerLayout  -->
+
+            <LinearLayout
+                android:id="@+id/layout2_case2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"><!-- Start of CASE2 LinerLayout  -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case2_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case2_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Welcome Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case2_welcome_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="No input Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case2_no_input_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Wrong input Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case2_wrong_input_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+
+            </LinearLayout><!-- END  of CASE2 LinerLayout  -->
+
+
+            <LinearLayout
+                android:id="@+id/layout3_case3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"><!-- Start of CASE3 LinerLayout  -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case3_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case3_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout><!-- Start of CASE3 LinerLayout  -->
+
+            <LinearLayout
+                android:id="@+id/layout4_case4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"><!-- Start of CASE4 LinerLayout  -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case4_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case4_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Enable Fall Back Rule"
+                    android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Select Agent "
+                    android:textSize="16dp" />
+
+                <com.example.intel.virtual_receptionist.CustomizeSpinnerOFAgent.MultiSelectionSpinner
+                    android:id="@+id/case4_total_agent_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:textColor="#1b1b1b"></com.example.intel.virtual_receptionist.CustomizeSpinnerOFAgent.MultiSelectionSpinner>
+
+                <ListView
+                    android:id="@+id/selected_agent_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Call Mode"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case4_call_mode_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Pre Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case4_pre_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Error Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case4_error_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Hold Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case4_hold_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+
+            </LinearLayout><!-- End of CASE4LinerLayout  -->
+
+
+            <LinearLayout
+                android:id="@+id/layout5_case5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"><!-- Start of CASE3 LinerLayout  -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case5_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case5_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case5_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+            </LinearLayout><!-- Close of Case 5 LinerLayout  -->
+
+            <LinearLayout
+                android:id="@+id/layout6_case6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"><!-- Start of CASE5 LinerLayout  -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Caller"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case6_caller_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Description"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case6_description_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write the Description Here "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Email"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/case6_email_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/custom_list_dp"
+                    android:cursorVisible="true"
+                    android:drawablePadding="20dp"
+                    android:hint="Write Email "
+                    android:paddingLeft="20dp"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Pre Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case6_pre_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Post Sound"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/case6_post_sound_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="60dp"
+                    android:ellipsize="marquee"
+                    android:entries="@array/coming_soon"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#1b1b1b"></Spinner>
+
+            </LinearLayout><!-- Close of Case6 LinerLayout  -->
+            <Button
+                android:id="@+id/add_rule_before_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Rule " />
+        </LinearLayout> <!-- Close of Parent LinerLayout  -->
+    </ScrollView>
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="@dimen/fab_margin"
+          android:padding="20dp"
+          android:src="@android:drawable/ic_dialog_email" />-->
+
+</LinearLayout>

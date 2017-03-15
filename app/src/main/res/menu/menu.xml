@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/file"
+    android:icon="@drawable/user_icon"
+    android:title="@string/Setting" >
+    <!-- "file" submenu -->
+    <menu>
+        <item android:id="@+id/profile"
+            android:title="@string/create_new" />
+        <item android:id="@+id/logout"
+            android:title="@string/logout" />
+
+    </menu>
+</item>
+    <item
+        android:id="@+id/update_btn_setting"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Update"
+        android:visible="false"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

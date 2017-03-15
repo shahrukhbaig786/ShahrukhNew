@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="spots_dialog_color">#685bd1</color>
+    <color name="spots_dialog_color1">#243559</color>
+    <color name="colorPrimary">#13d71d</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="back_button">#38647d</color>
+    <color name="white">#ffffff</color>
+    <color name="white_bg">#f9f7f7</color>
+    <color name="black">#000000</color>
+    <color name="app_bg">#02008c</color>
+    <color name="app_base_color_light">#9bb1be</color>
+
+    <color name="app_base_color">#38647d</color>
+    <color name="toolbar">#434849</color>
+    <color name="demo">#060170</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+    <color name="srk_active">#6567d1</color>
+    <color name="light_blue">#3e4e72</color>
+    <color name="foreground_back_color">#243559</color>
+</resources>

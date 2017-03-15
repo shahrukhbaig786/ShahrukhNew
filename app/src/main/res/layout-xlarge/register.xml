@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alpha="0.7"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Register a new membership"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/reg_et_username"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_buttonreg"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="8dp"
+            android:singleLine="true"
+
+            android:drawableTintMode="multiply"
+            android:hint="Username"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/reg_et_fullname"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_buttonreg"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="8dp"
+            android:singleLine="true"
+
+            android:drawableTintMode="multiply"
+            android:hint="Full Name"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/reg_et_email"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_buttonreg"
+            android:drawableLeft="@drawable/user_email"
+            android:drawablePadding="8dp"
+
+            android:drawableTintMode="multiply"
+            android:hint="Email"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:singleLine="true"
+
+            android:textSize="13sp" />
+
+
+
+
+        <EditText
+            android:id="@+id/reg_et_password"
+            android:layout_width="500dp"
+            android:layout_height="45dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_buttonreg"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:singleLine="true"
+
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+        <Button
+            android:id="@+id/reg_signUp"
+            android:layout_width="400dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button"
+            android:text="Sign Up"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/reg_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:text="Already a member"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

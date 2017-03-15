@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/imgg"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:padding="10dp"
+            android:text="Number allocated"
+            android:textColor="@color/white_bg" />
+
+        <Spinner
+            android:id="@+id/_number_Spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_weight="2.5"
+            android:ellipsize="marquee"
+            android:gravity="left"></Spinner>
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_callFlow"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bann"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout_callflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bann"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/MineCustomTabText"
+                app:tabTextColor="#9090dc"></android.support.design.widget.TabLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!--  <Button
+              android:id="@+id/beforePager_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="40dp"
+              android:background="@color/blue_btn_bg_color"
+              android:text="Before"
+              android:textColor="@color/white_bg" />-->
+        <!--
+
+                <TextView
+                    android:id="@+id/check_rules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="18dp"
+                    android:text="Rule"
+                    android:textColor="@color/white_bg"
+                    android:textSize="10dp" />
+        -->
+
+        <!-- <Button
+             android:id="@+id/afterPager_item"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="40dp"
+             android:background="@color/white_bg"
+             android:text="After"
+             android:textColor="@color/black" />-->
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_bg"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
